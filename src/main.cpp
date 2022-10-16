@@ -3,8 +3,9 @@ extern "C" DLLEXPORT constinit auto SKSEPlugin_Version = []() {
 	SKSE::PluginVersionData v;
 	v.PluginVersion(Version::MAJOR);
 	v.PluginName("examplePlugin");
-	v.AuthorName("OsmosisWrench");
-	v.UsesAddressLibrary(true);
+	v.AuthorName("Styyx");
+	v.UsesAddressLibrary();
+	v.UsesNoStructs();
 	v.CompatibleVersions({ SKSE::RUNTIME_LATEST });
 
 	return v;
